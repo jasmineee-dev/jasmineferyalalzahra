@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form UMKM - Boss Cireng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(10px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-green-100 min-h-screen flex items-center justify-center">
+
+    <div class="w-full max-w-3xl bg-white shadow-xl rounded-2xl p-8 fade-in">
+        
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-6 hover:scale-105 transition">
+            Form Data UMKM
+        </h1>
+
+        <form class="space-y-6">
+
+            <!-- Data UMKM -->
+            <div>
+                <label class="block font-semibold text-gray-700">Nama UMKM</label>
+                <input type="text" value="BOSS CIRENG"
+                    class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+            </div>
+
+            <div>
+                <label class="block font-semibold text-gray-700">Nama Pemilik</label>
+                <input type="text" value="JASMINE FERYAL AL-ZAHRA"
+                    class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none">
+            </div>
+
+            <div>
+                <label class="block font-semibold text-gray-700">Alamat Lengkap</label>
+                <textarea
+                    class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">JALAN KS TUBUN 3</textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-gray-700">No. HP</label>
+                <input type="tel" value="085882319757"
+                    class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none">
+            </div>
+
+            <!-- Deskripsi -->
+            <div>
+                <label class="block font-semibold text-gray-700">Deskripsi Usaha</label>
+                <textarea placeholder="Jelaskan usaha Anda..."
+                    class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
+            </div>
+
+            <!-- Kategori -->
+            <div>
+                <label class="block font-semibold text-gray-700">Kategori Usaha</label>
+                <select class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none">
+                    <option>Makanan & Minuman</option>
+                    <option>Fashion</option>
+                    <option>Jasa</option>
+                    <option>Lainnya</option>
+                </select>
+            </div>
+
+            <!-- Jam Operasional -->
+            <div>
+                <label class="block font-semibold text-gray-700">Jam Operasional</label>
+                <input type="text" placeholder="Contoh: 08:00 - 22:00"
+                    class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+            </div>
+
+            <!-- Produk -->
+            <div class="border-t pt-6">
+                <h2 class="text-xl font-semibold text-green-600 mb-4">Daftar Produk</h2>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block font-medium">Nama Produk</label>
+                        <input type="text"
+                            class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block font-medium">Harga</label>
+                        <input type="number"
+                            class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block font-medium">Deskripsi Singkat</label>
+                        <textarea
+                            class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center pt-4">
+                <button type="submit"
+                    class="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:scale-105 hover:shadow-xl transition duration-300">
+                    Simpan Data
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
